@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    
+    {%if Count %}
+    {% for Var in Varlist %}
+    <p>The value of {{Var.var}}  for the year {{Var.year}} is {{Var.value}}</p>
+    {% endfor %}
+    
+    {%else%}
+    <p>None matched with your query</p>
+    
+    {%endif%}
+    
+    
+    {% block content %}
+    <form action="" method="post" enctype="multipart/form-data" >
+        {% csrf_token %}
+        
+        <input type="submit" value="Download CSV" />
+    </form>
+    {% endblock %}
+</html>

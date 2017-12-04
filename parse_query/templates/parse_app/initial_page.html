@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <body>
+    <h1>Data Parsing</h1>
+    </body>
+    
+    {% block content %}
+    <form action="" method="post" enctype="multipart/form-data" >
+        {% csrf_token %}
+        <table>
+        {{ form }}
+        </table>
+        <input type="submit" value="Submit" />
+    </form>
+    {% endblock %}
+</html>
