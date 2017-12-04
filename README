@@ -1,0 +1,13 @@
+STEP 1: 
+ The function definition is in parser_pdftabletocsv. 
+Input   is path to the pdf file
+Output is the csv file.
+
+STEP 2:
+The changes to be made to execute this on other host is change DATABASE settings in settings.py to the one used.
+
+
+LIMITATIONS:
+
+The above was written for the specific balance sheet example and not the general case.  So this required some hardcoded parts while cleaning the data read from tabula.
+

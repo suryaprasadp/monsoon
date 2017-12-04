@@ -81,7 +81,7 @@ def index(request):
             pdftabletocsv(newdoc.docfile.path)
             
             #stored as table in database
-            #store_csv()
+            store_csv()
             
             
             return HttpResponseRedirect(reverse('result') )  # show the query result and also button to download csv
